@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,98 +10,120 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/98bde8cc83.js" crossorigin="anonymous"></script>
-    <title>Oh my food Menu - Le délice des sens</title>  
+    <title>Oh my food</title>  
 </head>
 <body>
-    <header>
-        <a href="file:///C:/Users/querrec.laure/Desktop/web%20developer%20OpenClassroom/P3/P3_querrec_code/index.html"><i class="fas fa-arrow-left"></i></a> 
+
+    <div class="fond-spinner">
+        <div class="spin"></div>
+    </div>
+        <header>
         <h1>ohmyfood</h1>
-        <img id="image_tete" src="images/restaurants/le_delice_des_sens.jpg" alt="photo d'un plat">
+        <div class="ligne-degradée"></div>
+        <div id="description">
+            <div id="maps">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Paris, Belleville</p>
+            </div>
+            <div id="reservez">
+                <p class="titre">Réservez le menu qui vous convient</p>
+                <p>Découvrez des restaurants d'exception sélectionnés par nos soins.</p>
+                <button id="explorer" type="button">Explorer nos restaurants</button>
+            </div>
+        </div>
     </header>
     <main>
-        <div class="main_menu">
-            <div class="titre_menu">
-                <h2>Le délice des sens</h2>
-                <i class="far fa-heart"></i>
-            </div> 
-            <div class="plat_menu">
-                <p class="p_type_plat">ENTREES</p>
-                <div class="souligne"><hr></div>
-                <div class="btn_menu">
-                    <p class="p1">Tartare de thon</p>
-                    <div class="p_mets">
-                        <p class="p2">Assaisonné au yuzu</p>
-                        <p class="p3">25€</p>
-                    </div>
-                </div>
-                <div class="btn_menu">
-                    <p class="p1">Bouchée de homard croustillant </p>
-                    <div class="p_mets">
-                        <p class="p2">Et sa farandole de petits légumes</p>
-                        <p class="p3">35€</p>
-                    </div>
-                </div>
-                <div class="btn_menu">
-                    <p class="p1">Velouté de cèpes</p>
-                    <div class="p_mets">
-                        <p class="p2">Aux truffes</p>
-                        <p class="p3">20€</p>
-                    </div>
-                </div>
+        <div class="fonctionnement">
+            <div class="fonctionnement_titre">
+                <p class="titre">Fonctionnement</p>
             </div>
-            <div class="plat_menu">
-                <p class="p_type_plat">PLATS</p>
-                <div class="souligne"><hr></div>
-                <div class="btn_menu">
-                    <p class="p1">Filet de boeuf aux herbes</p>
-                    <div class="p_mets">
-                        <p class="p2">Et sa crème de truffe</p>
-                        <p class="p3">40€</p>
+            <div class="conteneur_bouton">
+                <div class="btn btn1">
+                    <div class="int">
+                        <p>1</p>
+                        <i class="fas fa-mobile-alt"></i>
+                        <a href="#">Choisissez un restaurant</a>
                     </div>
                 </div>
-                <div class="btn_menu">
-                    <p class="p1">Langouste rôtie </p>
-                    <div class="p_mets">
-                        <p class="p2">Et ses légumes de saison</p>
-                        <p class="p3">35€</p>
+                <div class="btn btn2">
+                    <div class="int">
+                        <p>2</p>
+                        <i class="fas fa-list"></i> 
+                        <a href="#">Composez un menu</a>
                     </div>
                 </div>
-                <div class="btn_menu">
-                    <p class="p1">Côte de boeuf Angus </p>
-                    <div class="p_mets">
-                        <p class="p2">Et sa purée de panais</p>
-                        <p class="p3">44€</p>
-                    </div>
-                </div>
-            </div>
-            <div class="plat_menu">
-                <p class="p_type_plat">DESSERTS</p>
-                <div class="souligne"><hr></div>
-                <div class="btn_menu">
-                    <p class="p1">Farandole de desserts</p>
-                    <div class="p_mets">
-                        <p class="p2">Du chef</p>
-                        <p class="p3">18€</p>
-                    </div>
-                </div>
-                <div class="btn_menu">
-                    <p class="p1">Crème brulée</p>
-                    <div class="p_mets">
-                        <p class="p2">Revisitée</p>
-                        <p class="p3">22€</p>
-                    </div>
-                </div>
-                <div class="btn_menu">
-                    <p class="p1">Tiramisu </p>
-                    <div class="p_mets">
-                        <p class="p2">À la noisette</p>
-                        <p class="p3">23€</p>
+                <div class="btn btn3">
+                    <div class="int">
+                        <p>3</p>
+                        <i class="fas fa-store"></i>
+                        <a href="#">degustez au restaurant</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="btn_restaurant">
-            <button id="explorer" type="button">Commander</button>
+        <div class="conteneur_carte">
+            <p class="titre">Restaurants</p>
+            <div id="cartes">
+                <div class="nouveau"><p>Nouveau</p></div>
+                <div class="carte">
+                    <a href="Menu_La_palette_du_gout.html">
+                        <div>
+                            <img class="carte_image" src="images/restaurants/la_palette_du_gout.jpg" alt="photo plat">
+                            
+                        </div>
+                        <div class="carte_corp">
+                            <div class="coeur_carte">
+                                <p class="p_gras">La palette du goût</p>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <p>Menilmontant</p>      
+                        </div>
+                    </a>
+                </div>
+                <div class="nouveau"><p>Nouveau</p></div>
+                <div class="carte">
+                    <a href="Menu_La_note_enchantee.html">
+                        <div>
+                            <img class="carte_image" src="images/restaurants/La_note_enchantée.jpg" alt="photo plat">
+                        </div>
+                        <div class="carte_corp">
+                            <div class="coeur_carte">
+                                <p class="p_gras">La note enchantée</p>
+                                <i class="far fa-heart"></i>
+                            </div>    
+                            <p>Charonne</p> 
+                        </div>          
+                    </a>
+                </div>
+                <div class="carte">
+                    <a href="Menu_A_la_francaise.html">
+                        <div>
+                            <img class="carte_image" src="images/restaurants/A_la_française.jpg" alt="photo plat">
+                        </div>
+                        <div class="carte_corp">
+                            <div class="coeur_carte">
+                                <p class="p_gras">A la française</p>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <p>Cité Rouge</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carte">
+                    <a href="Menu_Le_delice_des_sens.html">
+                        <div>
+                            <img class="carte_image" src="images/restaurants/le_delice_des_sens.jpg" alt="photo plat">
+                        </div>
+                        <div class="carte_corp">
+                            <div class="coeur_carte">
+                                <p class="p_gras">Le délice des sens</p>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <p>Folie-Méricourt</p> 
+                        </div>                        
+                    </a>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -113,7 +135,6 @@
                 <li><a href="#">Mentions légales</a></li>
                 <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
             </ul>
-            <div></div>
         </div>
     </footer>
 </body>
