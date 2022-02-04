@@ -346,7 +346,7 @@
     display: none;
   }
 
-.fond-spinner{
+.pagedemarage{
   width: 100%;
   height: 100%;
   z-index: 99;  
@@ -356,7 +356,9 @@
   justify-content: center;
   align-items: center;
 }
-@keyframes spinner{
+
+
+@keyframes spin{
   0% {
     transform: translate3d(-50%, -50%, 0) rotate(0deg);
   }
@@ -365,7 +367,7 @@
   }
 }
 .spin::before {
-  animation: 1s linear infinite spinner;
+  animation: 1s linear infinite spin;
   animation-play-state: inherit;
   border: solid 20px hsl(0, 0%, 81%);
   border-bottom-color: #0080cf;
