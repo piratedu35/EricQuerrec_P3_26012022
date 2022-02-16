@@ -97,7 +97,7 @@ h1 {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 header {
@@ -191,6 +191,7 @@ main {
   padding: 0 20px;
 }
 
+/*------------------------------------bouton x3 index explications----------------------*/
 .conteneur_bouton {
   display: flex;
   flex-direction: column;
@@ -246,7 +247,7 @@ main {
   margin-left: -40px;
 }
 
-/*-------------------------------------------cartes---------------------------------------------------------*/
+/*-------------------------------------------cartes page index---------------------------------------------------------*/
 .conteneur_carte {
   width: 100%;
   height: auto;
@@ -274,6 +275,7 @@ main {
   border-radius: 20px;
   margin-bottom: 30px;
   box-shadow: 1px 2px 5px #cecece;
+  position: relative;
 }
 
 .carte_image {
@@ -281,23 +283,6 @@ main {
   height: 170px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
-}
-
-.nouveau {
-  width: 25%;
-  height: 10%;
-  background-color: #99e2d0;
-  position: relative;
-  top: 50px;
-  left: 30%;
-}
-
-.nouveau p {
-  color: #38947d;
-  font-weight: bold;
-  text-align: center;
-  margin: 0;
-  padding: 5%;
 }
 
 .carte_corp {
@@ -339,7 +324,7 @@ footer h2 {
 }
 
 footer ul {
-  width: 90%;
+  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -389,6 +374,26 @@ footer a {
   background-color: #f6f6f6;
   top: -50px;
   border-radius: 40px;
+}
+
+.nouveau {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  background-color: #15DEA5;
+  right: 5%;
+  bottom: 80%;
+  text-align: center;
+}
+
+#nouveau p {
+  font-size: small;
+  font-family: "roboto";
+  font-weight: bold;
+  color: #0b795a;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 7px;
 }
 
 /*------------------------------------------------------coeur coeur---------------------------------------------*/
@@ -446,7 +451,7 @@ footer a {
 
 /*--------------------------------------barre restaurant plats prix check-----------------*/
 .barre {
-  width: 94%;
+  width: 91%;
   background-color: white;
   box-shadow: #e6e6e6 2px 2px 6px;
   display: flex;
@@ -462,6 +467,10 @@ footer a {
   box-shadow: 2px 2px 6px;
 }
 
+.barre-corp {
+  width: 100%;
+}
+
 .barre__plat {
   font-size: 16px;
   width: 100%;
@@ -472,6 +481,9 @@ footer a {
   font-weight: bold;
   margin: 10px 0 0 10px;
   padding: 0;
+}
+
+.titre-plat p {
   text-overflow: ellipsis;
 }
 
@@ -485,6 +497,7 @@ footer a {
 .barre__prix {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .barre__prix p {
@@ -506,8 +519,6 @@ footer a {
   width: 80px;
   transition: transform 1000ms ease-in-out;
   overflow: hidden;
-  position: relative;
-  right: -82px;
 }
 .barre__icon i {
   display: block;
@@ -628,7 +639,7 @@ footer a {
 
   .bas_de_page ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 30px;
   }
 
