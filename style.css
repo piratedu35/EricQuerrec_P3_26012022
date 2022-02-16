@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*-----------------------demarrage 3 secondes--------------------*/
+/*-----------------------demarrage 3 secondes spinner--------------------*/
 body {
   margin: 0;
   padding: 0;
@@ -191,7 +191,7 @@ main {
   padding: 0 20px;
 }
 
-/*------------------------------------bouton x3 index explications----------------------*/
+/*------------------------------------bouton index "explications"----------------------*/
 .conteneur_bouton {
   display: flex;
   flex-direction: column;
@@ -483,7 +483,7 @@ footer a {
   padding: 0;
 }
 
-.titre-plat p {
+.titre-plat {
   text-overflow: ellipsis;
 }
 
@@ -500,49 +500,13 @@ footer a {
   justify-content: space-between;
 }
 
-.barre__prix p {
+.prix {
   display: flex;
   align-items: flex-end;
-  font-weight: 900;
-}
-
-.prix {
   margin: 0;
 }
 
-/*-------------------------------------------------------------------------------------------
-.barre__icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #15DEA5;
-  border-radius: 0 15px 15px 0;
-  width: 80px;
-  transition: transform 1000ms ease-in-out;
-  overflow: hidden;
-   i{
-      display: block;
-      transform: translateY(0) rotate(-360deg);
-      transition: transform 900ms ease-in-out 50ms;
-  }
-}
-
-.barre__icon i{
-  font-size: 20px;
-  align-items: center;
-  color: white;
-}
-
-.barre{
-  &:hover .barre__icon{
-          transform: translate(-82px, 0);
-      i {
-              transform: translateY(0) rotate(0deg);
-      }
-
-  }
-}
---------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------partie icon check---------------------------------------*/
 .barre__icon {
   display: flex;
   font-size: 22px;
