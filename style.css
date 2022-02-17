@@ -239,7 +239,6 @@ main {
 }
 
 .btn p {
-  font-size: 12px;
   width: 10px;
   height: 10px;
   border-radius: 25px;
@@ -248,6 +247,8 @@ main {
   color: white;
   position: relative;
   right: -5px;
+  display: flex;
+  align-items: center;
 }
 
 .int {
@@ -527,6 +528,7 @@ footer a {
   display: flex;
   align-items: flex-end;
   margin: 0;
+  font-weight: 900;
 }
 
 /*-----------------------------------------------------partie icon check---------------------------------------*/
