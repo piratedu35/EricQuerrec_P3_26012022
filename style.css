@@ -78,6 +78,7 @@ p {
   /* Les deux règles suivantes sont nécessaires pour text-overflow */
   white-space: nowrap;
   overflow: hidden;
+  font-size: 14px;
 }
 
 a {
@@ -146,9 +147,11 @@ header {
   width: 80%;
   margin: 0;
   padding: 0;
+  white-space: normal;
 }
 
 p.titre {
+  white-space: normal;
   font-size: 26px;
   font-weight: bold;
   padding: 0;
@@ -225,6 +228,14 @@ main {
   font-size: 16px;
   font-weight: 700;
   margin: 20px;
+}
+
+.btn2 a {
+  margin: 16px;
+}
+
+.btn3 a {
+  margin: 12px;
 }
 
 .btn p {
@@ -377,6 +388,8 @@ footer a {
 }
 
 .nouveau {
+  display: flex;
+  justify-content: center;
   width: 100px;
   height: 30px;
   position: absolute;
@@ -386,7 +399,17 @@ footer a {
   text-align: center;
 }
 
-#nouveau p {
+#nouveau2 {
+  font-size: small;
+  font-family: "roboto";
+  font-weight: bold;
+  color: #0b795a;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 7px;
+}
+
+#nouveau {
   font-size: small;
   font-family: "roboto";
   font-weight: bold;

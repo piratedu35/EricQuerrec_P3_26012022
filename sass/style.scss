@@ -71,6 +71,7 @@ p{
     /* Les deux règles suivantes sont nécessaires pour text-overflow */
   white-space: nowrap;
   overflow: hidden;
+  font-size: 14px;
 }
 
 a{
@@ -127,12 +128,15 @@ width: 20px;
     justify-content: space-evenly;
     align-items: center;
 }
+
 #reservez p{
     width: 80%;
     margin: 0;
     padding: 0;
+    white-space: normal;
 }
 p.titre{
+  white-space: normal;
     font-size: 26px;
     font-weight: bold;
     padding: 0;
@@ -154,6 +158,7 @@ p.titre{
   transform: scale(1.05);
   cursor: pointer;
 }
+
 main{
     max-width: 1200px;
     margin: 0 auto;
@@ -201,6 +206,12 @@ main{
     font-size: 16px;
     font-weight: 700;
     margin: 20px;
+}
+.btn2 a{
+  margin: 16px;
+}
+.btn3 a{
+  margin: 12px;
 }
 .btn p{
     font-size: 12px;
@@ -331,6 +342,8 @@ padding: 20px;
     border-radius: 40px;
 }
 .nouveau{
+  display: flex;
+  justify-content: center;
   width: 100px;
   height: 30px;
   position: absolute;
@@ -339,7 +352,16 @@ padding: 20px;
   bottom: 80%;
   text-align: center;
 }
-#nouveau p{
+#nouveau2{
+  font-size: small;
+  font-family: "roboto";
+  font-weight: bold;
+  color: #0b795a;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 7px;
+}
+#nouveau{
   font-size: small;
   font-family: "roboto";
   font-weight: bold;
@@ -446,8 +468,7 @@ padding: 20px;
   margin: 0;
 }
 /*-----------------------------------------------------partie icon check---------------------------------------*/
-.barre__icon
-{
+.barre__icon{
     display:flex;
     font-size:22px;
     color:white;
@@ -463,8 +484,7 @@ padding: 20px;
 	  transition-duration: 0.5s;
 	transition-timing-function: ease;
 }
-.barre:hover .barre__icon,
-{
+.barre:hover .barre__icon{
     display:flex;
     font-size:22px;
     color:white;
@@ -481,19 +501,16 @@ padding: 20px;
 	transition-duration: 0.5s;
 	transition-timing-function: ease;
 }
-.barre:hover i
-{
+.barre:hover i{
   animation: rotate-center 0.3s ease-in-out both;
 }
 
-.rotate-center 
-{
+.rotate-center {
 	-webkit-animation: rotate-center 0.6s ease-in-out both;
     animation: rotate-center 0.6s ease-in-out both;
 }
 
-@-webkit-keyframes rotate-center 
-{
+@-webkit-keyframes rotate-center {
   0% 
   {
     -webkit-transform: rotate(0);
@@ -505,8 +522,7 @@ padding: 20px;
     transform: rotate(360deg);
   }
 }
-@keyframes rotate-center 
-{
+@keyframes rotate-center {
   0% 
   {
     -webkit-transform: rotate(0);
@@ -603,6 +619,7 @@ padding: 20px;
   .fonctionnement p{
     text-align: center;
   }
+
   p.titre{
     margin: 20px;
   }
